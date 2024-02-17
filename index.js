@@ -7,8 +7,8 @@ const{readFileSync} = require('fs');
 const lambdaClient = new LambdaClient({
     region: "ap-south-1",
     credentials: {
-        accessKeyId: "AKIA3NNAUZ6H3MBLIWMT",
-        secretAccessKey: "x5k7ZFUB9kgi2cYwuhdIpVdPac0aTfl8wgP8bD8n",
+        accessKeyId: "Ente your key here",
+        secretAccessKey: "Enter your secret key here",
     },
 })
 
@@ -27,7 +27,7 @@ const lambdaParams = {
         ZipFile : code
     },
     Handler: "example.handler",
-    Role: "arn:aws:iam::784705310607:role/awsLambdaRole",
+    Role: "Enter your role here",
     Runtime:"nodejs20.x",
     Description: "This is just for testing purpose"
 };
