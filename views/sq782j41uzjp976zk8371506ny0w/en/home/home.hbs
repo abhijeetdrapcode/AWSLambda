@@ -1,0 +1,172 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+      <link rel='icon' type='image/png' href='https://webconnect-upload.s3.ap-south-1.amazonaws.com/faviconKeyName' />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta property="og:type" content="website">
+      <meta name="title" content="Home">
+      <meta property="og:title" content="Home">
+      <meta property="twitter:title" content="Home">
+      <meta property="og:image" content="https://webconnect-upload.s3.ap-south-1.amazonaws.com/projectLogoKeyName">
+      <meta property="twitter:image" content="https://webconnect-upload.s3.ap-south-1.amazonaws.com/projectLogoKeyName">
+      <meta property="og:url" content="/home.html">
+      <meta property="twitter:url" content="/home.html">
+      <meta charset="UTF-8">
+    <title>Home</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preload" href="https://asset.drapcode.com/css/googlefonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+          <noscript><link rel="stylesheet" href="https://asset.drapcode.com/css/googlefonts.css"></noscript>
+      <link rel="stylesheet" href='https://webconnect-theme-test.s3.us-east-1.amazonaws.com/sq782j41uzjp976zk8371506ny0w/bootstrap.min.css' crossorigin/>
+      <link rel="stylesheet" href='https://webconnect-theme-test.s3.us-east-1.amazonaws.com/sq782j41uzjp976zk8371506ny0w/dc-custom.min.css' crossorigin/>
+      
+      <link rel="preload" href="https://asset.drapcode.com/css/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+          <noscript><link rel="stylesheet" href="https://asset.drapcode.com/css/toastr.min.css"></noscript>
+      <link rel="preload" href="https://asset.drapcode.com/css/sweetalert2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+          <noscript><link rel="stylesheet" href="https://asset.drapcode.com/css/sweetalert2.min.css"></noscript>
+      <link rel="preload" href="https://asset.drapcode.com/css/select2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+          <noscript><link rel="stylesheet" href="https://asset.drapcode.com/css/select2.min.css"></noscript>
+      <link rel="preload" href="https://asset.drapcode.com/css/flatpickr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+          <noscript><link rel="stylesheet" href="https://asset.drapcode.com/css/flatpickr.min.css"></noscript>
+      <link rel="preload" href="https://asset.drapcode.com/css/loader.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+          <noscript><link rel="stylesheet" href="https://asset.drapcode.com/css/loader.css"></noscript>
+      <link rel="preload" href="https://asset.drapcode.com/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+          <noscript><link rel="stylesheet" href="https://asset.drapcode.com/css/all.min.css"></noscript>
+      <link rel="preload" href="https://asset.drapcode.com/css/coloris.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+          <noscript><link rel="stylesheet" href="https://asset.drapcode.com/css/coloris.min.css"></noscript>
+      <link rel='stylesheet' type='text/css' href='https://asset.drapcode.com/intl-tel-input/intlTelInput.min.css'>
+      <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'>
+      <link rel='stylesheet' type='text/css' href='https://unpkg.com/dropzone@5/dist/min/dropzone.min.css'>
+      <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
+      <link href='https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/timepicker@1.14.1/jquery.timepicker.min.css" />
+      <link rel='stylesheet' type='text/css' href=/static/sq782j41uzjp976zk8371506ny0w/abhijeetproject1832-custom-20250403T121623948Z.min.css>
+      
+  <script>
+      const publishTimestamp = '20250403T121623948Z';
+      if (publishTimestamp) {
+        const currentTimestamp = new Date().toISOString().replace(/[-:.]/g, "");
+        // Convert timestamps to valid ISO 8601 format
+        const formattedPublishTimestamp = publishTimestamp.replace(
+          /(\d{8}T\d{6})\d+Z/,
+          "$1Z"
+        );
+        const formattedCurrentTimestamp = currentTimestamp.replace(
+          /(\d{8}T\d{6})\d+Z/,
+          "$1Z"
+        );
+        // Convert to proper Date format (YYYY-MM-DDTHH:MM:SSZ)
+        const isoPublishTimestamp = formattedPublishTimestamp.replace(
+          /(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z/,
+          "$1-$2-$3T$4:$5:$6Z"
+        );
+        const isoCurrentTimestamp = formattedCurrentTimestamp.replace(
+          /(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z/,
+          "$1-$2-$3T$4:$5:$6Z"
+        );
+        // Parse timestamps into Date objects
+        const publishDate = new Date(isoPublishTimestamp);
+        const currentDate = new Date(isoCurrentTimestamp);
+        // Check for Invalid Date
+        if (isNaN(publishDate) || isNaN(currentDate)) {
+          console.error("Invalid Date detected!");
+        }
+        // Calculate time difference in milliseconds
+        const diffMs = Math.abs(currentDate - publishDate);
+        // Convert milliseconds to hours
+        const diffHours = diffMs / (1000 * 60 * 60);
+        const publishTimeSuffix = diffHours > 1 ? "hours" : "minutes";
+        const publishTimeMessage =
+          diffHours.toFixed(2) + " " + publishTimeSuffix + " ago...";
+        console.log("==> Published " + publishTimeMessage);
+      }
+    </script>
+  
+      <script>
+      console.log('==> Removing __ssr_ keys from session storage...');
+      Object.keys(window.sessionStorage).map(sessionKey => {
+        if(sessionKey.startsWith('__ssr_')) {
+        window.sessionStorage.removeItem(sessionKey);
+        }
+      });
+    </script>
+      <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      window.localStorage.setItem('loadingIconKey', 'PLACEHOLDER')
+  });
+    </script>
+      <script>
+      window.localStorage.setItem('debugMode', 'false');
+      if (!false) {
+        console.log('==> Disabling console log|info...');
+        console.log = function () {};
+        console.info = function () {};
+      }
+    </script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/popper.min.js" defer></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/feather.min.js" defer></script>
+      <script src='https://webconnect-theme-test.s3.us-east-1.amazonaws.com/sq782j41uzjp976zk8371506ny0w/bootstrap.bundle.min.js' defer></script>
+    <style>
+      .error { border-color: red; color: red; }
+    </style>
+      <style>* { box-sizing: border-box; } body {margin: 0;}#ib0qh{min-height:12rem;}#inj6f{min-height:12rem;}#iny68{min-height:12rem;}footer{position:relative;font-weight:400;font-size:15px;width:100%;bottom:0;right:0;left:0;clear:both;}ul{padding:0;margin:0;}li{list-style:none;}a:focus, a:hover{text-decoration:none;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease;}a:focus{outline:0;}img{max-width:100%;}p{font-size:16px;line-height:30px;color:#363940;font-weight:300;}h4{margin:0;font-weight:400;padding:0;color:#363940;}a{color:#007bff;}.footer--relative{position:relative;}.footer-big .footer-widget{margin-bottom:40px;}.footer--light{background:#e9ecef;}.footer-big .footer-menu ul li a, .footer-big p, .footer-big ul li{color:#363940;}.footer--dark h4, .footer--dark .footer-big p, .footer--dark .footer-menu ul li a, .footer--dark .footer-big ul li{color:#e9ecef;}.footer-menu ul li a{font-size:15px;line-height:32px;-webkit-transition:.3s;-o-transition:.3s;transition:.3s;}.footer-menu ul li a:hover{color:#0056b3;}.mini-footer p{margin:0;line-height:26px;font-size:15px;color:#999;}.mini-footer p a{color:#007bff;}.mini-footer p a:hover{color:#34bfa3;}.widget-about img{display:block;margin-bottom:30px;}.widget-about p{font-weight:400;}.widget-about .contact-details{margin:30px 0 0 0;}.widget-about .contact-details li{margin-bottom:10px;}.widget-about .contact-details li:last-child{margin-bottom:0;}.widget-about .contact-details li span{padding-right:12px;}.widget-about .contact-details li a{color:#007bff;}.card-link+.card-link{margin-left:1.25rem;}#inmef{border-top:1px none #abadaf;background-color:rgb(248, 249, 250);}.jumbotron{padding:2rem 1rem;margin-bottom:2rem;background-color:#e9ecef;border-radius:.3rem;}.jumbotron-fluid{padding-right:0;padding-left:0;border-radius:0;}#isug4{min-height:150px;background-color:rgba(0,0,0,0);}.btn:not(:disabled):not(.disabled){cursor:pointer;}.btn-primary{color:#fff;background-color:#007bff;border-color:#007bff;}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}#ilwkqc{min-height:100px;}#ikws2p{min-height:100px;}#iu18dg{min-height:12rem;background-image:url('https://picsum.photos/1920/400');background-repeat:no-repeat;background-position:center center;background-attachment:scroll;background-size:cover;}#itve81{min-height:12rem;}#itai3z{min-height:12rem;height:350px;}.data-table{padding:2px;}#i6cde{justify-content:space-between;}#dt-multi-select-container{text-align:end;margin-bottom:1rem;}#iizej{text-align:center;}#i90tc{margin:0px 2px;}#itnel{margin:0px 2px;}#iqk0k{flex-grow:0.96;justify-content:flex-end;display:inline-flex;}</style>
+      <style>undefined</style>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body dir='ltr'>
+    
+    
+    <span id='project-timezone' hidden style='display:none;'>0</span>
+    <span id='dateTimeFormat' hidden style='display:none;'>YYYY-MM-DD</span>
+    <span id='dcmeta' hidden data-publish='20250403T121623948Z' style='display:none;'></span>
+    <nav id="ify5" class="navbar container navbar-expand-lg bg-light navbar-light"><a href="#" data-disable-duration="5000" class="navbar-brand">DrapCode</a><button type="button" data-toggle="collapse" data-target="#dc-nb-zuIaIWPL" aria-controls="dc-nb-zuIaIWPL" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button><div id="dc-nb-zuIaIWPL" class="collapse navbar-collapse justify-content-end"><ul id="idzs" class="navbar-nav justify-content-end"><li class="nav-item active"><a href="#" data-disable-duration="5000" class="nav-link">Home <span class="sr-only">(current)</span></a></li><li class="nav-item"><a href="#" data-disable-duration="5000" class="nav-link">Features</a></li><li class="nav-item"><a href="#" data-disable-duration="5000" class="nav-link">Pricing</a></li><li class="nav-item"><a href="#" data-disable-duration="5000" class="nav-link">Contact</a></li><li class="nav-item"><a href="/login" data-disable-duration="5000" class="nav-link">Log In</a></li><li class="nav-item"><a href="/signup" data-disable-duration="5000" class="nav-link">Sign Up</a></li></ul></div></nav><div data-js="drapcode-sections" id="iuh0ox" class="dc-sections">        <div id="iu18dg" class="container-fluid"><div id="itve81" class="row"><div id="itai3z" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">    </div></div></div></div><div data-js="drapcode-sections" id="igf9u" class="dc-sections">        <div id="ib0qh" class="container"><div id="inj6f" class="row"><div id="iny68" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">    <div id="isug4" class="jumbotron jumbotron-fluid"><div class="jumbotron-body"><h1 id="ihj2i">This is Home Page Heading</h1><p id="i51fh" class="lead">Do duis nisi amet do. Voluptate aliqua nulla fugiat labore consequat consectetur quis. In officia mollit incididunt labore minim ea nulla laboris reprehenderit non enim.<br>Aliquip quis consectetur et ut officia elit ullamco commodo adipisicing occaecat ullamco velit in dolore. Incididunt aliquip sit irure tempor dolor velit eiusmod id qui ex ad est sit. Dolore deserunt id irure irure qui velit commodo officia sint aliqua qui nisi.<br>Dolore incididunt laborum labore nisi aliquip do excepteur dolor magna esse fugiat do. Nisi officia cupidatat sunt ex sint reprehenderit deserunt non do amet nisi labore. Eiusmod est labore adipisicing proident velit incididunt in incididunt. Ipsum commodo ullamco minim aute quis. Dolor fugiat labore laborum dolor aliquip tempor veniam reprehenderit adipisicing do pariatur.</p></div></div></div></div></div></div><div data-js="drapcode-sections" id="img27j" class="dc-sections">        <div id="ilwkqc" class="container"><div id="ikws2p" class="row"><div data-js="data-table" id="i5n1l" class="data-table p-3 table-responsive"><form data-gjs="search-form" data-datasource="DEFAULT" id="i6cde" data-form-collection="employee" class="search-form form-inline dc-form-default"><input type="text" name="full_name" value="" placeholder="Full Name" maxLength="200" class="input form-control form-control-sm mb-2 mr-sm-2"><div id="iqk0k"><button role="button" type="submit" data-disable-duration="5000" class="btn btn-sm btn-primary mb-2 mr-0">Search</button><button role="button" type="submit" value="export" data-disable-duration="5000" class="btn btn-sm btn-success mb-2 mr-0">Download CSV</button></div></form><div draggable="true" data-highlightable="1" id="dt-multi-select-container" class="box d-none"><button role="button" draggable="true" data-highlightable="1" type="button" id="dt-multi-select" data-disable-duration="5000" class="btn btn-outline-primary btn-md">Open Bulk Selection Modal</button></div><table id="dc-data-table-x33piWsy" class="table table-bordered table-resizable"><thead><tr data-js="row" data-custom-js-row="collection-row"><th data-selected-column="full_name" type="text"><div title="Full Name">Full Name</div></th><th scope="col" data-selected-column="action" type="action"><div>Actions</div></th></tr></thead><tbody data-js="table-body"><tr data-js="row" data-custom-js-row="collection-row" data-row="generated" style="display:none;"><td data-selected-column="full_name"><div>Full Name's value</div></td><td scope="col" data-selected-column="action" type="action"><a data-gjs="data-table-link" href="" data-disable-duration="5000" class="btn btn-primary btn-sm" id="i90tc">Edit</a><a data-gjs="data-table-link" href="" data-disable-duration="5000" class="btn btn-danger btn-sm" id="itnel">Delete</a></td></tr></tbody></table><div draggable="true" data-highlightable="1" data-gjs="pagination" data-datasource="DEFAULT" id="iizej" class="pagination"><button role="button" type="button" data-disable-duration="5000" class="btn btn-sm btn-outline-primary first">First</button><button role="button" type="button" data-disable-duration="5000" class="btn btn-sm btn-outline-primary previous">Previous</button><button role="button" type="button" data-disable-duration="5000" class="btn btn-sm btn-outline-primary next">Next</button><button role="button" type="button" data-disable-duration="5000" class="btn btn-sm btn-outline-primary last">Last</button></div></div></div></div></div><footer id="inmef" class="footer-area footer--light footer--relative"></footer>
+      <script type="text/javascript" src="/resources/constant.js"></script>
+      <script type="text/javascript" src="/resources/drapcode.min.js"></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/jquery.validate.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/math.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/moment.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/numeral.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/voca.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/additional-methods.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/select2.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/bootbox.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/papaparse.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/flatpickr.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/toastr.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/axios.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/sweetalert2.all.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/js/coloris.min.js" ></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/intl-tel-input/intlTelInput-jquery.min.js"></script>
+      <script type="text/javascript" src="https://asset.drapcode.com/intl-tel-input/utils.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+      <script type="text/javascript" src="/resources/action/emailActions.js"></script>
+      <script type="text/javascript" src="/resources/action/smsActions.js"></script>
+      <script type="text/javascript" src="/resources/action/fileUploadActions.js"></script>
+      <script type="text/javascript" src="/resources/action/modalActions.js"></script>
+      <script type="text/javascript" src="/resources/webconnect.js"></script>
+      <script type="text/javascript" src="/resources/dataLoader.min.js"></script>
+      <script type="text/javascript" src="/resources/drapcode.body.min.js"></script>
+      <script type="text/javascript" src="/resources/drapcode.modal.min.js"></script>
+      <script type="text/javascript" src="/resources/action/awsSnsActions.js"></script>
+      <script type="text/javascript" src="/resources/action/docusignActions.js"></script>
+      <script type="text/javascript" src="/resources/action/anyFileToTextActions.js"></script>
+      <script type="text/javascript" src="/resources/action/textAnonymizationActions.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+      <script src="https://unpkg.com/tippy.js@6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/tinycolor2@1.6.0/cjs/tinycolor.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timepicker@1.14.1/jquery.timepicker.min.js"></script>
+      <script>for(var items=document.querySelectorAll("#ify5"),i=0,len=items.length;i<len;i++)!function(){}.bind(items[i])();for(i=0,len=(items=document.querySelectorAll("#dc-nb-zuIaIWPL")).length;i<len;i++)!function(){}.bind(items[i])();for(i=0,len=(items=document.querySelectorAll("#i5n1l")).length;i<len;i++)!function(){var e,a="employee",t="9388e4cd-cae6-4c7d-b17c-ceb78af95776",l="",i="{**##uuid**##:**##a9f919c7-80b1-4337-893c-db6ffdc09705**##,**##collectionName**##:**##employee**##,**##orgCollectionName**##:**##employee**##,**##collectionTitle**##:**##Employee**##,**##fields**##:[{**##fieldName**##:**##createdAt**##,**##fieldTitle**##:{**##en**##:**##Created At**##},**##placeholder**##:{**##en**##:**##**##},**##type**##:**##createdAt**##,**##required**##:false,**##staticOptions**##:[],**##unique**##:false,**##isMultiSelect**##:false,**##isPluginField**##:false,**##encrypted**##:false,**##isPrivate**##:false,**##isGenerateIcons**##:false,**##_id**##:**##677bc0d0c3cd62de7b95a27e**##,**##createdAt**##:**##2025-01-06T11:38:56.913Z**##,**##updatedAt**##:**##2025-01-06T11:38:56.913Z**##},{**##fieldName**##:**##updatedAt**##,**##fieldTitle**##:{**##en**##:**##Updated At**##},**##placeholder**##:{**##en**##:**##**##},**##type**##:**##updatedAt**##,**##required**##:false,**##staticOptions**##:[],**##unique**##:false,**##isMultiSelect**##:false,**##isPluginField**##:false,**##encrypted**##:false,**##isPrivate**##:false,**##isGenerateIcons**##:false,**##_id**##:**##677bc0d0c3cd62de7b95a27f**##,**##createdAt**##:**##2025-01-06T11:38:56.913Z**##,**##updatedAt**##:**##2025-01-06T11:38:56.913Z**##},{**##fieldName**##:**##createdBy**##,**##fieldTitle**##:{**##en**##:**##Created By**##},**##placeholder**##:{**##en**##:**##**##},**##type**##:**##createdBy**##,**##required**##:false,**##refCollection**##:{**##collectionName**##:**##user**##,**##collectionField**##:**##userName**##,**##displayType**##:**##dropdown**##},**##staticOptions**##:[],**##unique**##:false,**##isMultiSelect**##:false,**##isPluginField**##:false,**##encrypted**##:false,**##isPrivate**##:false,**##isGenerateIcons**##:false,**##_id**##:**##677bc0d0c3cd62de7b95a280**##,**##createdAt**##:**##2025-01-06T11:38:56.913Z**##,**##updatedAt**##:**##2025-01-06T11:38:56.913Z**##},{**##fieldName**##:**##uuid**##,**##fieldTitle**##:{**##en**##:**##Id**##},**##placeholder**##:{**##en**##:**##**##},**##type**##:**##uuid**##,**##required**##:false,**##staticOptions**##:[],**##unique**##:false,**##isMultiSelect**##:false,**##isPluginField**##:false,**##encrypted**##:false,**##isPrivate**##:false,**##isGenerateIcons**##:false,**##_id**##:**##677bc0d0c3cd62de7b95a281**##,**##createdAt**##:**##2025-01-06T11:38:56.913Z**##,**##updatedAt**##:**##2025-01-06T11:38:56.913Z**##},{**##fieldName**##:**##isDeleted**##,**##fieldTitle**##:{**##en**##:**##Is Deleted**##},**##placeholder**##:{**##en**##:**##**##},**##type**##:**##isDeleted**##,**##required**##:false,**##staticOptions**##:[],**##unique**##:false,**##isMultiSelect**##:false,**##isPluginField**##:false,**##encrypted**##:false,**##isPrivate**##:false,**##isGenerateIcons**##:false,**##_id**##:**##677bc0d0c3cd62de7b95a282**##,**##createdAt**##:**##2025-01-06T11:38:56.913Z**##,**##updatedAt**##:**##2025-01-06T11:38:56.913Z**##},{**##fieldName**##:**##full_name**##,**##fieldTitle**##:{**##en**##:**##Full Name**##},**##placeholder**##:{**##en**##:**##Full Name**##},**##type**##:**##text**##,**##required**##:false,**##validation**##:{**##min**##:null,**##max**##:null,**##regex**##:**##**##,**##allowedFileTypes**##:[],**##noAllowedFiles**##:1},**##refCollection**##:{**##collectionName**##:**##**##,**##collectionField**##:**##**##,**##parentCollectionField**##:**##**##,**##displayType**##:**##dropdown**##,**##isShowAsText**##:false,**##isShowAsRadioOrCheckBox**##:false,**##isFileType**##:false},**##extraFieldSetting**##:{**##dateDisplayType**##:**##date**##,**##textareaDisplayType**##:**##text-area**##,**##algorithm**##:**##**##,**##prepend**##:**##**##,**##append**##:**##**##,**##minLength**##:1,**##defaultValue**##:**##**##},**##staticOptions**##:[],**##unique**##:false,**##isMultiSelect**##:false,**##isPluginField**##:false,**##encrypted**##:false,**##isPrivate**##:false,**##isGenerateIcons**##:false,**##_id**##:**##677bc0d8c3cd62de7b95a2ad**##,**##createdAt**##:**##2025-01-06T11:39:04.536Z**##,**##updatedAt**##:**##2025-01-06T11:39:04.536Z**##}],**##finders**##:[{**##name**##:**##All Items**##,**##uuid**##:**##9388e4cd-cae6-4c7d-b17c-ceb78af95776**##,**##finder**##:**##FIND_ALL**##,**##fieldsInclude**##:[**##***##],**##fieldsExclude**##:[],**##conditions**##:[],**##noOfExternalParams**##:0,**##isPrivate**##:false,**##enableLookup**##:false,**##enableRls**##:false,**##_id**##:**##677bc0d0c3cd62de7b95a283**##,**##createdAt**##:**##2025-01-06T11:38:56.913Z**##,**##updatedAt**##:**##2025-01-06T11:38:56.913Z**##},{**##name**##:**##All Items Created By Current LoggedIn User**##,**##uuid**##:**##3e078cfd-fc91-49f7-9a8f-ab3c78caf862**##,**##finder**##:**##FIND_ALL**##,**##fieldsInclude**##:[**##***##],**##fieldsExclude**##:[],**##conditions**##:[{**##conjunctionType**##:**##**##,**##requiredExternal**##:false,**##query**##:{**##field**##:**##createdBy**##,**##key**##:**##EQUALS**##,**##value**##:**##CURRENT_USER**##,**##fieldType**##:**##**##,**##refField**##:**##**##,**##refCollection**##:**##**##,**##isFilter**##:false,**##_id**##:**##677bc0d0c3cd62de7b95a286**##},**##_id**##:**##677bc0d0c3cd62de7b95a285**##}],**##noOfExternalParams**##:0,**##isPrivate**##:true,**##sortBy**##:**##createdAt**##,**##orderBy**##:**##asc**##,**##enableLookup**##:false,**##enableRls**##:false,**##_id**##:**##677bc0d0c3cd62de7b95a284**##,**##createdAt**##:**##2025-01-06T11:38:56.913Z**##,**##updatedAt**##:**##2025-01-06T11:38:56.913Z**##}],**##projectId**##:**##sq782j41uzjp976zk8371506ny0w**##,**##projectVersion**##:1,**##isDeleted**##:false,**##collectionIndex**##:1,**##isPluginCollection**##:false,**##isInMemory**##:false,**##lastRefreshTime**##:**##**##,**##isTenantCollection**##:false,**##isUserSettingCollection**##:false,**##isHidden**##:false,**##sourceOfOrigin**##:**##DEFAULT**##,**##willPersist**##:true,**##restrictEdit**##:false,**##restrictItem**##:false,**##utilities**##:[],**##constants**##:[],**##constraints**##:[],**##validations**##:[],**##workflows**##:[],**##indexes**##:[],**##permissionLevelSecurity**##:[],**##rowLevelSecurityFilter**##:[],**##createdAt**##:**##2025-01-06T11:38:56.913Z**##,**##updatedAt**##:**##2025-01-06T11:39:04.536Z**##}",s=(i=i.replaceAll("**##",'"'),[]),n=(i&&"undefined"!==i&&(d=(i=JSON.parse(i)).finders.find(function(e){return e.uuid===t}))&&d.conditions&&d.conditions.forEach(function(e){var a;e.requiredExternal&&((e=e.query.value).includes("---")?(a=e.split("---"),s.push(a[0]),s.push(a[1])):s.push(e))}),{}),d=(n.numberPerPage="10",n.filteredItemsUrl="collection-table/".concat(a,"/finder/").concat(t,"/items"),n.currentPage=1,n.currentDateRange=0,n.dataTable=this,n.numberOfPages=0,n.finderId=t,n.collectionName=a,n.fieldName="",n.externalQueryParamKeys=s,n.browserSessionDataPath="",i&&"undefined"!==i&&(n.externalApiId=i.externalApiId,n.responseDataMapping=i.responseDataMapping,n.bodyDataFrom=i.bodyDataFrom,n.sendFormData=!!i.sendFormData),this.querySelector("[data-gjs=pagination]")),i=this.querySelector(".search-form");i&&(i.addEventListener("submit",function(e){e.preventDefault();var a=!1;"externalAPIResponse"===l.trim()&&"undefined"!=typeof loadDataTableFromExternalAPI&&(console.log("*** Search in DataTable for Non Persistent Data... "),a=!0),n.event=e,searchInDataTable(n,"",a)}),e=i.hasAttribute("data-enableautosearch"),"undefined"!=typeof autoSearchInDataSearch)&&autoSearchInDataSearch(e,i),["externalAPIResponse","browserSession","userFields","tenantFields","userSettingsFields"].includes(l.trim())||"undefined"==typeof loadDataTable||(console.log("*** Loading DataTable from Collection..."),loadDataTable(t,a,n)),["userFields","tenantFields"].includes(l.trim())&&"undefined"!=typeof loadDataTableLocalStorage&&("userFields"===l.trim()?(console.log("*** Loading DataTable from User Fields..."),n.localStorageKey="user"):"tenantFields"===l.trim()?(console.log("*** Loading DataTable from Tenant Fields..."),n.localStorageKey="tenant"):"userSettingsFields"===l.trim()&&(console.log("*** Loading DataTable from User Settings Fields..."),n.localStorageKey="userSettings"),loadDataTableLocalStorage(n)),"externalAPIResponse"===l.trim()&&"undefined"!=typeof loadDataTableFromExternalAPI&&(console.log("*** Loading DataTable from External API..."),loadDataTableFromExternalAPI(n)),"browserSession"===l.trim()&&"undefined"!=typeof loadDataTableFromBrowserSession&&(console.log("*** Loading DataTable from Browser Session..."),loadDataTableFromBrowserSession(a,n)),d&&(this.querySelector(".next")&&this.querySelector(".next").addEventListener("click",function(e){nextDataTablePage(n)}),this.querySelector(".first")&&this.querySelector(".first").addEventListener("click",function(e){firstDataTablePage(n)}),this.querySelector(".last")&&this.querySelector(".last").addEventListener("click",function(e){lastDataTablePage(n)}),this.querySelector(".previous"))&&this.querySelector(".previous").addEventListener("click",function(e){previousDataTablePage(n)})}.bind(items[i])();</script>
+    
+    
+  </body>
+</html>
